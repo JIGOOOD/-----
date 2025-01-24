@@ -36,6 +36,13 @@ if config.config_file_name is not None:
 # target_metadata = mymodel.Base.metadata
 from app.db.base import Base  # Base 가져오기
 from app.models.user import User  # User 모델 가져오기
+from app.models.calendar import Calendar
+from app.models.file import File
+from app.models.homework import Homework
+from app.models.infomation import Infomation
+from app.models.lesson import Lesson
+from app.models.student import Student
+from app.models.summary import Summary
 
 target_metadata = Base.metadata
 if not target_metadata.tables:
